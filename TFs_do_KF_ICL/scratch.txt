@@ -1,0 +1,112 @@
+rsync -avz --include 'prediction_errors_gauss_C*/' --exclude '*' sultand@bliss1.ist.berkeley.edu:mop_modifications/streamlined_mop/outputs/GPT2/240619_070456.1e49ad_upperTriA_gauss_C/ /Users/sultandaniels/Documents/Transformer_Kalman/outputs/GPT2/240619_070456.1e49ad_upperTriA_gauss_C/
+
+line 31
+Q = to_complex(self.observation_IR.to(torch.float32))                                   # [B... x O_D x R x O_D]
+Q = to_complex(self.observation_IR)                                   # [B... x O_D x R x O_D]
+
+
+line 124
+self.observation_IR.data = flattened_w.unflatten(0, (self.ir_length, -1)).transpose(0, 1).to(torch.float32) # [O_D x R x O_D]
+self.observation_IR.data = flattened_w.unflatten(0, (self.ir_length, -1)).transpose(0, 1) # [O_D x R x O_D]
+
+
+scp -r /home/sultand/TFs_do_KF_ICL/outputs/GPT2/250128_022331.067361_multi_sys_trace_ortho_state_dim_5_ident_C_lr_6.339572769844456e-05_num_train_sys_40000/needles sultand@sahai-desktop.eecs.berkeley.edu:TFs_do_KF_ICL/outputs/GPT2/250128_022331.067361_multi_sys_trace_ortho_state_dim_5_ident_C_lr_6.339572769844456e-05_num_train_sys_40000/
+
+scp -r /home/ubuntu/gauss-NoPE-GH200/TFs_do_KF_ICL/outputs/GPT2_NoPE/250127_010709.dc88f2_multi_sys_trace_zero_cut_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000/checkpoints sultand@bliss1.ist.berkeley.edu:TFs_do_KF_ICL/outputs/GPT2_NoPE/250127_010709.dc88f2_multi_sys_trace_zero_cut_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000/checkpoints
+
+
+scp -r /home/sultand/TFs_do_KF_ICL/outputs/GPT2 sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/
+
+git config --global user.email "sultan_daniels@berkeley.edu"
+
+git config --global user.name "sultandaniels"
+
+
+
+colors = ['#000000', '#005CAB', '#E31B23', '#FFC325', '#00A651', '#9B59B6']
+
+
+
+find /home/sultand/TFs_do_KF_ICL/outputs/GPT2/250125_202437.caf35b_multi_sys_trace_gaussA_state_dim_10_gauss_C_lr_1.3207437987531975e-05_num_train_sys_40000/checkpoints -name 'step=*.ckpt' | grep -v 'step=[0-9]*[05]00.ckpt' | xargs rm
+
+find /home/ubuntu/gauss-NoPE-GH200/TFs_do_KF_ICL/outputs/GPT2/250125_210849.09203d_multi_sys_trace_ident_state_dim_5_ident_C_lr_1.3207437987531975e-05_num_train_sys_40000/checkpoints -name 'step=*.ckpt' | grep -v 'step=[0-9]*000.ckpt' | xargs -r rm
+
+
+for i in {1,2}; do CUDA_VISIBLE_DEVICES=0 python data_train.py --make_preds --multi_haystack --model_name ortho_haar_big --datasource train --late_start $i; done
+
+
+CUDA_VISIBLE_DEVICES=1 python data_train.py --multi_haystack --make_preds --model_name ortho_haar_big --datasource train
+
+
+
+git filter-branch --env-filter '
+OLD_EMAIL="63972349+sultandaniels@users.noreply.github.com"
+CORRECT_NAME="anon4mossreview"
+CORRECT_EMAIL="anon4review4353@gmail.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+
+
+
+
+
+rsync -avz \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/outputs/GPT2/241011_194532.92d997_unifA_gauss_C \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/outputs/GPT2/240923_201715.03463b_single_system_single_system \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/outputs/GPT2/241017_030119.281a92_rotDiagA_gauss_C \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/outputs/GPT2/241103_013426.749aca_gaussA_gauss_C_lr_0 \
+  .
+
+
+
+
+rsync -avz \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241103_013426.749aca_gaussA_gauss_C_lr_0 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241117_204332.cee615_upperTriA_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241121_182231.e5d465_gaussA_state_dim_3_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241121_182725.0ad317_upperTriA_state_dim_3_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_003840.65644e_gaussA_state_dim_20_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_004016.7a9db9_upperTriA_state_dim_20_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_025241.7a9db9_upperTriA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_025401.65644e_gaussA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241203_014142.301b1c_gaussA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_120000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241203_014212.9ee182_upperTriA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_120000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241208_005008.eb9178_gaussA_state_dim_20_gauss_C_dist_mix_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_120000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241210_022137.1f85d1_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_80000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241210_180753.5991f3_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241210_181119.5991f3_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000_dependent_on_above \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241213_010648.743d5b_upperTriA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241213_011012.743d5b_upperTriA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+.
+
+
+rsync -avz \
+  --exclude 'checkpoints/' \
+  --exclude 'data/' \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241103_013426.749aca_gaussA_gauss_C_lr_0 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241117_204332.cee615_upperTriA_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241121_182231.e5d465_gaussA_state_dim_3_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241121_182725.0ad317_upperTriA_state_dim_3_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_003840.65644e_gaussA_state_dim_20_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_004016.7a9db9_upperTriA_state_dim_20_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_025241.7a9db9_upperTriA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241124_025401.65644e_gaussA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241203_014142.301b1c_gaussA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_120000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241203_014212.9ee182_upperTriA_state_dim_20_gauss_C_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_120000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241208_005008.eb9178_gaussA_state_dim_20_gauss_C_dist_mix_state_dim_mix_lr_1.584893192461114e-05_num_train_sys_120000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241210_022137.1f85d1_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_80000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241210_180753.5991f3_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241210_181119.5991f3_gaussA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000_dependent_on_above \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241213_010648.743d5b_upperTriA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  sultandaniels@hpc.brc.berkeley.edu:/global/scratch/users/sultandaniels/GPT2/241213_011012.743d5b_upperTriA_state_dim_10_gauss_C_lr_1.584893192461114e-05_num_train_sys_40000 \
+  .
