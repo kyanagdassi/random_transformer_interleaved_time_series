@@ -1,5 +1,5 @@
 from collect_data import collect_data
-from models import GPT2
+from models import GPT2, Mamba2
 from core import Config
 from train import train_gpt2
 from core import setup_train
@@ -3491,11 +3491,24 @@ if __name__ == '__main__':
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print("\ndevice:", device)
         torch.cuda.empty_cache()
-        # instantiate gpt2 model
-        model = GPT2(config.n_dims_in, config.n_positions, n_dims_out=config.n_dims_out,
-                    n_embd=config.n_embd, n_layer=config.n_layer, n_head=config.n_head, use_pos_emb=config.use_pos_emb)
+
+        if config.model_type == "GPT2":
+            # instantiate gpt2 model
+            model = GPT2(config.n_dims_in, config.n_positions, n_dims_out=config.n_dims_out,
+                        n_embd=config.n_embd, n_layer=config.n_layer, n_head=config.n_head, use_pos_emb=config.use_pos_emb)
+        elif config.model_type == "mamba2":
+            
+            model = Mamba2(
+                n_dims_in=config.n_dims_in,
+                n_positions=250,
+                n_embd=128,
+                n_layer=12,
+                n_dims_out=5
+            )
         
         model.to(device)
+
+        print(f"model: {model}")
         
         output_dir, ckpt_dir, experiment_name = setup_train(model, train_mix_dist, train_mix_state_dim)
         # output_dir = output_dir + f"_{config.dataset_typ}{config.C_dist}"

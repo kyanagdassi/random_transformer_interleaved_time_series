@@ -65,7 +65,7 @@ class Config(object, metaclass=Singleton):
     test_data_workers = 128 #keep at 1
 
     # Model settings
-    model_type = "mamba2" #"GPT2" #"transfoXL" #"olmo" #"mamba2"
+    model_type = "GPT2" #"mamba2" #"GPT2" #"transfoXL" #"olmo" #"mamba2"
     use_pos_emb = True #use positional embeddings
     n_positions = 250 - mask_budget*backstory_len if mem_suppress and not masking else 250  #500 for extended OLS #250 #context length
     n_embd = 128 #128 #192 #288

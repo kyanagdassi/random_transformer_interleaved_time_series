@@ -464,6 +464,9 @@ class FilterDataset(Dataset):
                 sim_objs = pickle.load(f)
                 self.sim_objs = sim_objs
 
+        else:
+            self.sim_objs = None
+
     def load(self, path):
         with open(path, "rb") as f:
             data = pickle.load(f)
