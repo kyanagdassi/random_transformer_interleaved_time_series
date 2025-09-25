@@ -661,9 +661,11 @@ if __name__ == "__main__":
     end = time.time()
     print(f"Time taken to compute pseudo prediction stats: {(end - start)/60} minutes")
 
-    model_names = ["ortho_haar_tiny", "ortho_haar_small", "ortho_haar_medium_single_gpu", "ortho_haar_big"]
+    # model_names = ["ortho_haar_tiny", "ortho_haar_small", "ortho_haar_medium_single_gpu", "ortho_haar_big"]
+    model_names = ["ortho_haar_mamba2_med"]
 
-    sizes = ["212K - Tiny", "701K - Small", "2.42M - Medium", "10.7M - Big"]
+    # sizes = ["212K - Tiny", "701K - Small", "2.42M - Medium", "10.7M - Big"]
+    sizes = ["755K - Mamba2 Medium"]
     model_count = 0
 
     markers = ["o", "x"]
@@ -682,55 +684,55 @@ if __name__ == "__main__":
             tf_std_arr = np.array(tf_std_lst)
             train_exs_arr = np.array(train_exs)
             # print(f"tf_avg_lst: {tf_avg_lst}")
-            ax.plot(train_exs_arr, tf_avg_arr, color=colors[model_count], linewidth=2, label=f"{sizes[model_count]}" if datasources[count] == "Test" else "", marker=markers[count], linestyle=linestyles[count], markersize=5, zorder=2-count)
+            ax.plot(train_exs_arr, tf_avg_arr, color=colors[model_count], linewidth=2, label=f"{sizes[model_count]}: {datasources[count]}", marker=markers[count], linestyle=linestyles[count], markersize=5, zorder=2-count)
             ax.fill_between(train_exs_arr, tf_avg_arr - tf_std_arr, tf_avg_arr + tf_std_arr, color=colors[model_count], alpha=0.2, zorder=0)
 
 
-            if model_count == 2 and datasources[count] == "Test":
+            # if model_count == 2 and datasources[count] == "Test":
                 #create a text file that will hold the tf_avg_arr values for each axhline
-                path = f"{output_dir}/figures/multi_cut/pretrain_loss/{model_name}_axhline_values.txt"
+                # path = f"{output_dir}/figures/multi_cut/pretrain_loss/{model_name}_axhline_values.txt"
                 #get the paired colormap from matplotlib
 
-                os.makedirs(os.path.dirname(path), exist_ok=True)
+                # os.makedirs(os.path.dirname(path), exist_ok=True)
 
-                print(f"len of train_exs_cong: {len(train_exs_cong[0])} {len(train_exs_cong[1])}")
+                # print(f"len of train_exs_cong: {len(train_exs_cong[0])} {len(train_exs_cong[1])}")
 
-                #find the index of the element in train_exs_arr that is closest to 2.5e7
-                print(f"train_exs_arr: {train_exs_arr}")
-                closest_ind = np.argmin(np.abs(train_exs_arr - 2.5e7))
-                print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
-                #plot a horizontal line at tf_avg_arr[closest_ind]
-                ax.axhline(y=tf_avg_arr[closest_ind], color="darkgreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
+                # #find the index of the element in train_exs_arr that is closest to 2.5e7
+                # print(f"train_exs_arr: {train_exs_arr}")
+                # closest_ind = np.argmin(np.abs(train_exs_arr - 2.5e7))
+                # print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
+                # #plot a horizontal line at tf_avg_arr[closest_ind]
+                # ax.axhline(y=tf_avg_arr[closest_ind], color="darkgreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
 
-                with open(path, 'a') as f:
-                    f.write(f"symbolic recall: {tf_avg_arr[closest_ind]}\n")
+                # with open(path, 'a') as f:
+                #     f.write(f"symbolic recall: {tf_avg_arr[closest_ind]}\n")
 
-                #find the index of the element in train_exs_arr that is closest to 1.2e7
-                closest_ind = np.argmin(np.abs(train_exs_arr - 1.2e7))
-                print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
-                #plot a horizontal line at tf_avg_arr[closest_ind]
-                ax.axhline(y=tf_avg_arr[closest_ind], color="limegreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
+                # #find the index of the element in train_exs_arr that is closest to 1.2e7
+                # closest_ind = np.argmin(np.abs(train_exs_arr - 1.2e7))
+                # print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
+                # #plot a horizontal line at tf_avg_arr[closest_ind]
+                # ax.axhline(y=tf_avg_arr[closest_ind], color="limegreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
 
-                with open(path, 'a') as f:
-                    f.write(f"bayes recall: {tf_avg_arr[closest_ind]}\n")
+                # with open(path, 'a') as f:
+                    # f.write(f"bayes recall: {tf_avg_arr[closest_ind]}\n")
 
-                #find the index of the element in train_exs_arr that is closest to 2e6
-                closest_ind = np.argmin(np.abs(train_exs_arr - 2e6))
-                print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
-                #plot a horizontal line at tf_avg_arr[closest_ind]
-                ax.axhline(y=tf_avg_arr[closest_ind], color="darkgreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
+                # #find the index of the element in train_exs_arr that is closest to 2e6
+                # closest_ind = np.argmin(np.abs(train_exs_arr - 2e6))
+                # print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
+                # #plot a horizontal line at tf_avg_arr[closest_ind]
+                # ax.axhline(y=tf_avg_arr[closest_ind], color="darkgreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
 
-                with open(path, 'a') as f:
-                    f.write(f"restart icl: {tf_avg_arr[closest_ind]}\n")
+                # with open(path, 'a') as f:
+                #     f.write(f"restart icl: {tf_avg_arr[closest_ind]}\n")
 
-                #find the closest to 4e7
-                closest_ind = np.argmin(np.abs(train_exs_arr - 4e7))
-                print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
-                #plot a horizontal line at tf_avg_arr[closest_ind]
-                ax.axhline(y=tf_avg_arr[closest_ind], color="limegreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
+                # #find the closest to 4e7
+                # closest_ind = np.argmin(np.abs(train_exs_arr - 4e7))
+                # print(f"closest_ind: {closest_ind}, train_exs_arr[closest_ind]: {train_exs_arr[closest_ind]}")
+                # #plot a horizontal line at tf_avg_arr[closest_ind]
+                # ax.axhline(y=tf_avg_arr[closest_ind], color="limegreen", linestyle="--", linewidth=1.5, zorder=0, label=f"__no_legend__")
 
-                with open(path, 'a') as f:
-                    f.write(f"IWL: {tf_avg_arr[closest_ind]}\n")
+                # with open(path, 'a') as f:
+                #     f.write(f"IWL: {tf_avg_arr[closest_ind]}\n")
 
             print(f"pseudo_pred_stats[datasources[count]][0]: {pseudo_pred_stats[datasources[count]][0]}")
             #plot the pseudo prediction error as a horizontal line
@@ -742,7 +744,7 @@ if __name__ == "__main__":
         model_count += 1
 
 
-    ax.axhline(pseudo_pred_stats["Test"][0], color="black", linewidth=3, label=f"__no_legend__", linestyle = ":", zorder=100)
+    ax.axhline(pseudo_pred_stats["Test"][0], color="black", linewidth=3, label=f"Pseudoinv pred.", linestyle = ":", zorder=100)
 
 
 

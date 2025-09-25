@@ -5,6 +5,7 @@ from models.lightning_base_model import BaseModel
 from core import Config
 from linalg_helpers import print_matrix
 import pickle
+import time
 
 config = Config()
 
@@ -50,8 +51,11 @@ class Mamba2(BaseModel):
         self.name = f"mamba2_embd={n_embd}_layer={n_layer}"
 
     def predict_step(self, input_dict, batch_idx=None):
+        # start = time.time()
         current = input_dict["current"]
         embeds = self._read_in(current)
+        # stop = time.time()
+        # print(f"Time taken for input projection: {stop - start:.4f} seconds")
         
         # # Add positional embedding if enabled
         # if self.use_pos_emb:
@@ -62,8 +66,15 @@ class Mamba2(BaseModel):
         #         # Handle sequences longer than max positions
         #         embeds = embeds + self.pos_embedding[:, -seq_len:, :]
         
+        # start = time.time()
         output = self.backbone(inputs_embeds=embeds).last_hidden_state
+        # stop = time.time()
+        # print(f"Time taken for Mamba2Model forward pass: {stop - start:.4f} seconds")
+        # start = time.time()
         prediction = self._read_out(output)
+        # stop = time.time()
+        # print(f"Time taken for output projection: {stop - start:.4f} seconds")
+
         # predict only on xs
         return input_dict, {"preds": prediction}
 

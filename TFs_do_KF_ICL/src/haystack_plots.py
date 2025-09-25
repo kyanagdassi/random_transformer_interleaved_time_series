@@ -603,13 +603,13 @@ def plot_haystack_train_conv(config, colors, fin_quartiles_ckpt, beg_quartiles_c
 
         beg_lab_suffix = f" into seg. 1" if config.irrelevant_tokens and config.new_hay_insert else " after initial"
 
-        final_lab_suffix = f" into seg. {config.num_sys_haystack + 1}" if config.irrelevant_tokens and config.new_hay_insert else " after final"
+        final_lab_suffix = f" into seg. {config.num_sys_haystack + 1}" if config.irrelevant_tokens and config.new_hay_insert else " after query"
 
         if key == "MOP": #key == "OLS_analytical_ir_1" or key == "OLS_ir_1": #key == "MOP" or 
             col_count = 0
             for step in steps:
 
-                key_lab = "TF" if key == "MOP" else key
+                key_lab = "" if key == "MOP" else f"{key}: "
                 qs = np.array(fin_quartiles_ckpt[key][step])
                 qs = np.transpose(qs)
 
@@ -631,7 +631,8 @@ def plot_haystack_train_conv(config, colors, fin_quartiles_ckpt, beg_quartiles_c
                     # raise NotImplementedError("Check the early stop index")
                 
                 if not config.only_beg:
-                    ax.plot(x_values, qs[1], label=f"{key_lab}: {step}{final_lab_suffix}", markersize=5, marker=".", zorder=5 if key == "MOP" else 0, color=colors[col_count], linewidth=2)
+                    # plot the final quartiles
+                    ax.plot(x_values, qs[1], label=f"{key_lab}{step}{final_lab_suffix}", markersize=5, marker=".", zorder=5 if key == "MOP" else 0, color=colors[col_count], linewidth=2)
                     # if not valA == "gaussA":
                     #     ax.fill_between(x_values, qs[0], qs[2], alpha=0.2, color=colors[col_count])
 
@@ -645,48 +646,51 @@ def plot_haystack_train_conv(config, colors, fin_quartiles_ckpt, beg_quartiles_c
                 else:
                     color = colors[col_count]
 
-                beg_qs = np.array(beg_quartiles_ckpt[key][step])
-                beg_qs = np.transpose(beg_qs)
-                # set the color to the same as the fin quartiles
-                ax.plot(x_values, beg_qs[1], label=f"{key_lab}: {step}{beg_lab_suffix}", markersize=1 if "OLS" in key_lab else 5, marker="x", color=color, linestyle="-" if "OLS_ir" in key_lab else (":" if "OLS_analytical" in key_lab else "--"), linewidth=5 if "OLS_analytical" in key_lab else 2)
 
-                # if not valA == "gaussA":
-                #     ax.fill_between(x_values, beg_qs[0], beg_qs[2], alpha=0.2, color=color)
-                ax.fill_between(x_values, beg_qs[0], beg_qs[2], alpha=0.2, color=color)
+                if not config.only_fin:
+                    # plot the beginning quartiles
+                    beg_qs = np.array(beg_quartiles_ckpt[key][step])
+                    beg_qs = np.transpose(beg_qs)
+                    # set the color to the same as the fin quartiles
+                    ax.plot(x_values, beg_qs[1], label=f"{key_lab}: {step}{beg_lab_suffix}", markersize=1 if "OLS" in key_lab else 5, marker="x", color=color, linestyle="-" if "OLS_ir" in key_lab else (":" if "OLS_analytical" in key_lab else "--"), linewidth=5 if "OLS_analytical" in key_lab else 2)
 
-                
+                    # if not valA == "gaussA":
+                    #     ax.fill_between(x_values, beg_qs[0], beg_qs[2], alpha=0.2, color=color)
+                    ax.fill_between(x_values, beg_qs[0], beg_qs[2], alpha=0.2, color=color)
 
-                ax_len.plot(x_values, beg_qs[1], label=f"{key_lab}: {step}{beg_lab_suffix}", markersize=1 if "OLS" in key_lab else 5, marker="x", color=color, linestyle="-" if "OLS_ir" in key_lab else (":" if "OLS_analytical" in key_lab else "--"), linewidth=5 if "OLS_analytical" in key_lab else 2)
-                ax_len.fill_between(x_values, beg_qs[0], beg_qs[2], alpha=0.2, color=color)
+                    
 
-                #plot the pseudo prediction errors
-                #take the median of the pseudo prediction errors
-                pseudo_pred_meds = np.median(pseudo_pred_errs, axis=1)
-                print(f"pseudo_pred_meds[0,2]: {pseudo_pred_meds[0,2]}")
-                print(f"shape of pseudo_pred_meds: {pseudo_pred_meds.shape}")
-                pseudo_pred_qs = np.quantile(pseudo_pred_meds, [0.25, 0.5, 0.75], axis=0)
-                print(f"shape of pseudo_pred_qs: {pseudo_pred_qs.shape}")
-                print(f"value of index 1 + step: {1 + step}")
+                    ax_len.plot(x_values, beg_qs[1], label=f"{key_lab}: {step}{beg_lab_suffix}", markersize=1 if "OLS" in key_lab else 5, marker="x", color=color, linestyle="-" if "OLS_ir" in key_lab else (":" if "OLS_analytical" in key_lab else "--"), linewidth=5 if "OLS_analytical" in key_lab else 2)
+                    ax_len.fill_between(x_values, beg_qs[0], beg_qs[2], alpha=0.2, color=color)
 
-                x_values = np.array(x_values, dtype=float)
+                    #plot the pseudo prediction errors
+                    #take the median of the pseudo prediction errors
+                    pseudo_pred_meds = np.median(pseudo_pred_errs, axis=1)
+                    print(f"pseudo_pred_meds[0,2]: {pseudo_pred_meds[0,2]}")
+                    print(f"shape of pseudo_pred_meds: {pseudo_pred_meds.shape}")
+                    pseudo_pred_qs = np.quantile(pseudo_pred_meds, [0.25, 0.5, 0.75], axis=0)
+                    print(f"shape of pseudo_pred_qs: {pseudo_pred_qs.shape}")
+                    print(f"value of index 1 + step: {1 + step}")
 
-                skip = 5
-                y = np.full(x_values[::skip].shape, pseudo_pred_qs[1, 1 + step], dtype=float)
-                yerr_lower = np.full(x_values[::skip].shape, pseudo_pred_qs[1, 1 + step] - pseudo_pred_qs[0, 1 + step], dtype=float)
-                yerr_upper = np.full(x_values[::skip].shape, pseudo_pred_qs[2, 1 + step] - pseudo_pred_qs[1, 1 + step], dtype=float)
+                    x_values = np.array(x_values, dtype=float)
 
-                ax.errorbar(
-                    x_values[::skip], y,
-                    yerr=[yerr_lower, yerr_upper],
-                    fmt='o', color=colors[col_count],
-                    label=f"Pseudoinv: {step}{final_lab_suffix}", capsize=2, markersize=5, marker=".", linestyle=":", linewidth=2, zorder=100
-                )
-                ax_len.errorbar(
-                    x_values[::skip], y,
-                    yerr=[yerr_lower, yerr_upper],
-                    fmt='o', color=colors[col_count],
-                    label=f"Pseudoinv: {step}{final_lab_suffix}", capsize=2, markersize=5, marker=".", linestyle=":", linewidth=2, zorder=100
-                )
+                    skip = 5
+                    y = np.full(x_values[::skip].shape, pseudo_pred_qs[1, 1 + step], dtype=float)
+                    yerr_lower = np.full(x_values[::skip].shape, pseudo_pred_qs[1, 1 + step] - pseudo_pred_qs[0, 1 + step], dtype=float)
+                    yerr_upper = np.full(x_values[::skip].shape, pseudo_pred_qs[2, 1 + step] - pseudo_pred_qs[1, 1 + step], dtype=float)
+
+                    ax.errorbar(
+                        x_values[::skip], y,
+                        yerr=[yerr_lower, yerr_upper],
+                        fmt='o', color=colors[col_count],
+                        label=f"Pseudoinv: {step}{final_lab_suffix}", capsize=2, markersize=5, marker=".", linestyle=":", linewidth=2, zorder=100
+                    )
+                    ax_len.errorbar(
+                        x_values[::skip], y,
+                        yerr=[yerr_lower, yerr_upper],
+                        fmt='o', color=colors[col_count],
+                        label=f"Pseudoinv: {step}{final_lab_suffix}", capsize=2, markersize=5, marker=".", linestyle=":", linewidth=2, zorder=100
+                    )
 
                 
                 # ax.errorbar(x_values[::skip], pseudo_pred_qs[1, 1 + step],

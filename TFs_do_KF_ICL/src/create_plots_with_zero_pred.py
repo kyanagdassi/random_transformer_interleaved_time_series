@@ -1961,6 +1961,8 @@ def compute_errors_needle_or_multi_cut(config, model, sim_objs, errs_dir, errs_l
 
 
 def tf_preds(multi_sys_ys, model, device, config):
+    # enable mixed precision inference if available
+
     with torch.no_grad():  # no gradients
         I = np.take(multi_sys_ys, np.arange(multi_sys_ys.shape[-2] - 1), axis=-2)  # get the inputs (observations without the last one)
 
@@ -1968,14 +1970,36 @@ def tf_preds(multi_sys_ys, model, device, config):
         batch_shape = I.shape[:-2]
         # print("batch_shape:", batch_shape)
         flattened_I = np.reshape(I, (np.prod(batch_shape), *I.shape[-2:]))
+        
+        #check dtype of flattened_I
+        print("flattened_I.dtype:", flattened_I.dtype)
         # print("flattened_I.shape:", flattened_I.shape)
+        print("before validation_loader")
+        start = time.time()  # start the timer for transformer predictions
         validation_loader = torch.utils.data.DataLoader(torch.from_numpy(flattened_I),
                                                         batch_size=config.test_batch_size)
+        stop = time.time()  # end the timer for transformer predictions
+        print("time elapsed for creating validation_loader:", (stop - start), "sec")
         preds_arr = []  # Store the predictions for all batches
-        for validation_batch in iter(validation_loader):
-            _, flattened_preds_tf = model.predict_step(
-                {"current": validation_batch.to(device)})  # .float().to(device)})    # predict using the model
-            preds_arr.append(flattened_preds_tf["preds"].cpu().numpy())
+
+        print("before predict_steps")
+        start = time.time()  # start the timer for transformer predictions
+        # single_start = start
+
+        with torch.amp.autocast(device_type="cuda", dtype=torch.float32 if config.model_type == "mamba2" else torch.float32):
+            for validation_batch in iter(validation_loader):
+                _, flattened_preds_tf = model.predict_step(
+                    {"current": validation_batch.to(device)})  # .float().to(device)})    # predict using the model
+                
+                # stop = time.time()  # end the timer for transformer predictions
+                # print("time elapsed for single predict_step:", (stop - single_start), "sec")
+                single_start = stop  # reset the single_start timer for the next batch
+
+                preds_arr.append(flattened_preds_tf["preds"].cpu().numpy())
+
+        stop = time.time()  # end the timer for transformer predictions
+        print("time elapsed for predict_steps:", (stop - start)/60, "min") 
+
         preds_tf = np.reshape(np.concatenate(preds_arr, axis=0),
                             (*batch_shape, multi_sys_ys.shape[-2] - 1, config.ny))  # Combine the predictions for all batches
         # print("preds_tf.shape:", preds_tf.shape)

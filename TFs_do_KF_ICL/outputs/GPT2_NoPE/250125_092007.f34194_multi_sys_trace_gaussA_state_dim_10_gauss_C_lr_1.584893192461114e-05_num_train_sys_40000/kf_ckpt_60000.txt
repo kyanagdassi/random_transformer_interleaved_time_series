@@ -1,3 +1,0 @@
-kf checkpoint is 60,000.
-
-batch size: 2048
