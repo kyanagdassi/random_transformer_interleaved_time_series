@@ -3104,6 +3104,8 @@ if __name__ == '__main__':
     ortho = args.ortho
     print("only_beg arg", args.only_beg)
     only_beg = args.only_beg
+    print("only_fin arg", args.only_fin)
+    only_fin = args.only_fin
     print("acc arg", args.acc)
     acc = args.acc
     print("ortho_sync arg", args.ortho_sync)
@@ -3189,6 +3191,10 @@ if __name__ == '__main__':
     config.override("only_beg", only_beg) # set the only_beg in the config object
     if config.only_beg:
         print("only plotting the beginning evals\n\n\n")
+
+    config.override("only_fin", only_fin) # set the only_fin in the config object
+    if config.only_fin:
+        print("only plotting the final evals\n\n\n")
 
     config.override("plateau", plateau) # set the plateau in the config object
     if config.plateau:
@@ -3370,6 +3376,8 @@ if __name__ == '__main__':
                     print("not making predictions")
 
                     model_dir, experiment = split_path(output_dir)
+
+                    print(f"\n val_dataset_typ: {config.val_dataset_typ}")
 
                     # load quartiles_ckpt_files
                     train_conv_fin_quartiles_file, train_conv_beg_quartiles_file, x_values_file, fin_quartiles_ckpt, beg_quartiles_ckpt, x_values = load_quartiles_ckpt_files(config, num_sys, model_dir, experiment)
