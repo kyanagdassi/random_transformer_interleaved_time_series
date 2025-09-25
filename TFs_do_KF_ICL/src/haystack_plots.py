@@ -729,7 +729,7 @@ def plot_haystack_train_conv(config, colors, fin_quartiles_ckpt, beg_quartiles_c
     leg = ax.legend(fontsize=12, ncol=2 if valA =="ident" else 1, loc="lower left")
     leg.set_zorder(101)  # Ensure legend is on top
     ax.set_xlim(x_values[0] - 1e3, x_values[-1] + 1e3)
-    ax.set_ylim([2e-3, 1.8e0])
+    ax.set_ylim([2e-3, 2e0])
     # ax.set_title(("Ortho" if valA == "ortho" else ("Gaussian" if valA == "gaussA" else "Identity")) + f" Haystack Length: {haystack_len} vs Training Examples")
 
     ax_len.set_xlabel("# of Training Examples", fontsize=14)
