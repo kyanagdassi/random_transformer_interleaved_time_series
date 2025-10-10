@@ -721,15 +721,15 @@ def plot_haystack_train_conv(config, colors, fin_quartiles_ckpt, beg_quartiles_c
     # plt.tight_layout()
     # plt.subplots_adjust(left=0.15, right=0.95, top=0.95, bottom=0.15)  # Adjust margins as needed
 
-    ax.set_xlabel("# of Training Examples", fontsize=14)
-    ax.set_ylabel(f"Error " + ("Ratio" if valA == "gaussA" and not abs_err else ""), fontsize=14)
+    ax.set_xlabel("# of Training Traces Seen so far in Training", fontsize=16)
+    ax.set_ylabel(f"Error " + ("Ratio" if valA == "gaussA" and not abs_err else ""), fontsize=16)
     ax.set_yscale('log')
     ax.set_xscale('log')
     # ax.grid(True, which="both")
     #make grid alpha 0.1
     # ax.set_axisbelow(True)
     ax.grid(color='gray', linestyle='--', linewidth=0.5, alpha=0.3, which='both')
-    leg = ax.legend(fontsize=12, ncol=2 if valA =="ident" else 1, loc="lower left")
+    leg = ax.legend(fontsize=16, ncol=2 if valA =="ident" else 1, loc="lower left")
     leg.set_zorder(101)  # Ensure legend is on top
     ax.set_xlim(x_values[0] - 1e3, x_values[-1] + 1e3)
     ax.set_ylim([2e-3, 2e0])

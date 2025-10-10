@@ -141,8 +141,10 @@ def populate_traces(config, num_tasks, entries, test=False, train_conv=False, tr
 
     context_len = config.n_positions + 1 #the length of the context is the number of positions plus 1 for the start token
 
-    if not test and config.mem_suppress:
-        context_len -= config.mask_budget*config.backstory_len #subtract the maximum number of indices that will be masked from the context length
+    # if not test and config.mem_suppress:
+    #     context_len -= config.mask_budget*config.backstory_len #subtract the maximum number of indices that will be masked from the context length
+
+
     # if test and config.mem_suppress and config.datasource == "backstory_train":
     #     context_len -= config.mask_budget*config.backstory_len #tr
 
@@ -398,7 +400,7 @@ def populate_traces(config, num_tasks, entries, test=False, train_conv=False, tr
 def add_backstories(config, sim_objs, segments, mask_idx, sys_appear, sys_choices, seg_starts, real_seg_lens):
     n_masks = 0 #number of sys that have been masked
     i = 0 #segment number in interleaved segments
-    while i < len(seg_starts) and n_masks < config.mask_budget:
+    while i < len(seg_starts):
         if sys_choices[i] not in sys_appear and real_seg_lens[i] > 0: #if the system has not appeared before and the segment length is greater than 0
             sys_appear.append(sys_choices[i])
             A = sim_objs[sys_choices[i]].A
@@ -449,6 +451,9 @@ def add_backstories(config, sim_objs, segments, mask_idx, sys_appear, sys_choice
 
         #add the indices of the zeros to the mask_idx list
         mask_idx.extend(np.arange(pre_concat_len, config.n_positions + 1))
+
+    elif segments.shape[0] > config.n_positions:
+        segments = segments[:config.n_positions + 1, :] #truncate the segments to the context length
     
     return segments, mask_idx
 
@@ -500,11 +505,14 @@ class FilterDataset(Dataset):
 
                 if config.masking or not (config.cached_data or config.masking):
                     orig_segments = segments #save the original segments for later use
+                    print(f"shape of segments before backstory addition: {segments.shape}")
                     mask_idx = [] # initialize the mask index list
                     sys_appear = []
                     if config.backstory:
 
                         segments, mask_idx = add_backstories(config, self.sim_objs, segments, mask_idx, sys_appear, sys_choices, seg_starts, real_seg_lens)
+
+                        raise Exception(f"shape of segments after backstory addition: {segments.shape}")
                     
                         # n_masks = 0 #number of sys that have been masked
                         # i = 0 #segment number in interleaved segments
