@@ -1,0 +1,4700 @@
+
+================================================================================
+BATCH 1/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+================================================================================
+BATCH 2/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+================================================================================
+BATCH 3/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+================================================================================
+BATCH 4/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+================================================================================
+BATCH 5/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+================================================================================
+BATCH 6/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+================================================================================
+BATCH 7/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+================================================================================
+BATCH 8/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+================================================================================
+BATCH 9/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+================================================================================
+BATCH 10/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+================================================================================
+BATCH 11/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+================================================================================
+BATCH 12/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+================================================================================
+BATCH 13/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+================================================================================
+BATCH 14/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+================================================================================
+BATCH 15/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+--- Total Training Configs: 180 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87008026
+  k=2: Pure=0.87042685, Modified=0.87547888
+  k=3: Pure=0.65492406, Modified=0.68178049
+  k=4: Pure=0.48469212, Modified=0.49472126
+  k=5: Pure=0.32119587, Modified=0.32940477
+  k=6: Pure=0.14152481, Modified=0.15619197
+  k=7: Pure=0.00692055, Modified=0.01396766
+  k=8: Pure=0.00399655, Modified=0.00946639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10101008
+  k=2: Pure=0.01235591, Modified=0.02002818
+  k=3: Pure=0.00886700, Modified=0.01458670
+  k=4: Pure=0.00733464, Modified=0.01315880
+  k=5: Pure=0.00614114, Modified=0.01285398
+  k=6: Pure=0.00580340, Modified=0.01155506
+  k=7: Pure=0.00360388, Modified=0.00870418
+  k=8: Pure=0.00297427, Modified=0.00877648
+
+================================================================================
+BATCH 16/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+--- Total Training Configs: 180 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87008026
+  k=2: Pure=0.87042685, Modified=0.87547888
+  k=3: Pure=0.65492406, Modified=0.68178049
+  k=4: Pure=0.48469212, Modified=0.49472126
+  k=5: Pure=0.32119587, Modified=0.32940477
+  k=6: Pure=0.14152481, Modified=0.15619197
+  k=7: Pure=0.00692055, Modified=0.01396766
+  k=8: Pure=0.00399655, Modified=0.00946639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10101008
+  k=2: Pure=0.01235591, Modified=0.02002818
+  k=3: Pure=0.00886700, Modified=0.01458670
+  k=4: Pure=0.00733464, Modified=0.01315880
+  k=5: Pure=0.00614114, Modified=0.01285398
+  k=6: Pure=0.00580340, Modified=0.01155506
+  k=7: Pure=0.00360388, Modified=0.00870418
+  k=8: Pure=0.00297427, Modified=0.00877648
+
+--- Total Training Configs: 192 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86973520
+  k=2: Pure=0.87042685, Modified=0.87239820
+  k=3: Pure=0.65492406, Modified=0.68139022
+  k=4: Pure=0.48469212, Modified=0.49961953
+  k=5: Pure=0.32119587, Modified=0.32998107
+  k=6: Pure=0.14152481, Modified=0.15388498
+  k=7: Pure=0.00692055, Modified=0.01348389
+  k=8: Pure=0.00399655, Modified=0.00920345
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09963618
+  k=2: Pure=0.01235591, Modified=0.01890543
+  k=3: Pure=0.00886700, Modified=0.01389933
+  k=4: Pure=0.00733464, Modified=0.01271433
+  k=5: Pure=0.00614114, Modified=0.01213423
+  k=6: Pure=0.00580340, Modified=0.01119478
+  k=7: Pure=0.00360388, Modified=0.00841772
+  k=8: Pure=0.00297427, Modified=0.00860642
+
+================================================================================
+BATCH 17/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+--- Total Training Configs: 180 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87008026
+  k=2: Pure=0.87042685, Modified=0.87547888
+  k=3: Pure=0.65492406, Modified=0.68178049
+  k=4: Pure=0.48469212, Modified=0.49472126
+  k=5: Pure=0.32119587, Modified=0.32940477
+  k=6: Pure=0.14152481, Modified=0.15619197
+  k=7: Pure=0.00692055, Modified=0.01396766
+  k=8: Pure=0.00399655, Modified=0.00946639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10101008
+  k=2: Pure=0.01235591, Modified=0.02002818
+  k=3: Pure=0.00886700, Modified=0.01458670
+  k=4: Pure=0.00733464, Modified=0.01315880
+  k=5: Pure=0.00614114, Modified=0.01285398
+  k=6: Pure=0.00580340, Modified=0.01155506
+  k=7: Pure=0.00360388, Modified=0.00870418
+  k=8: Pure=0.00297427, Modified=0.00877648
+
+--- Total Training Configs: 192 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86973520
+  k=2: Pure=0.87042685, Modified=0.87239820
+  k=3: Pure=0.65492406, Modified=0.68139022
+  k=4: Pure=0.48469212, Modified=0.49961953
+  k=5: Pure=0.32119587, Modified=0.32998107
+  k=6: Pure=0.14152481, Modified=0.15388498
+  k=7: Pure=0.00692055, Modified=0.01348389
+  k=8: Pure=0.00399655, Modified=0.00920345
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09963618
+  k=2: Pure=0.01235591, Modified=0.01890543
+  k=3: Pure=0.00886700, Modified=0.01389933
+  k=4: Pure=0.00733464, Modified=0.01271433
+  k=5: Pure=0.00614114, Modified=0.01213423
+  k=6: Pure=0.00580340, Modified=0.01119478
+  k=7: Pure=0.00360388, Modified=0.00841772
+  k=8: Pure=0.00297427, Modified=0.00860642
+
+--- Total Training Configs: 204 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87049841
+  k=2: Pure=0.87042685, Modified=0.87437274
+  k=3: Pure=0.65492406, Modified=0.67583278
+  k=4: Pure=0.48469212, Modified=0.50416115
+  k=5: Pure=0.32119587, Modified=0.33300970
+  k=6: Pure=0.14152481, Modified=0.15206902
+  k=7: Pure=0.00692055, Modified=0.01267549
+  k=8: Pure=0.00399655, Modified=0.00879755
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09841887
+  k=2: Pure=0.01235591, Modified=0.01863320
+  k=3: Pure=0.00886700, Modified=0.01378554
+  k=4: Pure=0.00733464, Modified=0.01236067
+  k=5: Pure=0.00614114, Modified=0.01150491
+  k=6: Pure=0.00580340, Modified=0.01098325
+  k=7: Pure=0.00360388, Modified=0.00807074
+  k=8: Pure=0.00297427, Modified=0.00783648
+
+================================================================================
+BATCH 18/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+--- Total Training Configs: 180 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87008026
+  k=2: Pure=0.87042685, Modified=0.87547888
+  k=3: Pure=0.65492406, Modified=0.68178049
+  k=4: Pure=0.48469212, Modified=0.49472126
+  k=5: Pure=0.32119587, Modified=0.32940477
+  k=6: Pure=0.14152481, Modified=0.15619197
+  k=7: Pure=0.00692055, Modified=0.01396766
+  k=8: Pure=0.00399655, Modified=0.00946639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10101008
+  k=2: Pure=0.01235591, Modified=0.02002818
+  k=3: Pure=0.00886700, Modified=0.01458670
+  k=4: Pure=0.00733464, Modified=0.01315880
+  k=5: Pure=0.00614114, Modified=0.01285398
+  k=6: Pure=0.00580340, Modified=0.01155506
+  k=7: Pure=0.00360388, Modified=0.00870418
+  k=8: Pure=0.00297427, Modified=0.00877648
+
+--- Total Training Configs: 192 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86973520
+  k=2: Pure=0.87042685, Modified=0.87239820
+  k=3: Pure=0.65492406, Modified=0.68139022
+  k=4: Pure=0.48469212, Modified=0.49961953
+  k=5: Pure=0.32119587, Modified=0.32998107
+  k=6: Pure=0.14152481, Modified=0.15388498
+  k=7: Pure=0.00692055, Modified=0.01348389
+  k=8: Pure=0.00399655, Modified=0.00920345
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09963618
+  k=2: Pure=0.01235591, Modified=0.01890543
+  k=3: Pure=0.00886700, Modified=0.01389933
+  k=4: Pure=0.00733464, Modified=0.01271433
+  k=5: Pure=0.00614114, Modified=0.01213423
+  k=6: Pure=0.00580340, Modified=0.01119478
+  k=7: Pure=0.00360388, Modified=0.00841772
+  k=8: Pure=0.00297427, Modified=0.00860642
+
+--- Total Training Configs: 204 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87049841
+  k=2: Pure=0.87042685, Modified=0.87437274
+  k=3: Pure=0.65492406, Modified=0.67583278
+  k=4: Pure=0.48469212, Modified=0.50416115
+  k=5: Pure=0.32119587, Modified=0.33300970
+  k=6: Pure=0.14152481, Modified=0.15206902
+  k=7: Pure=0.00692055, Modified=0.01267549
+  k=8: Pure=0.00399655, Modified=0.00879755
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09841887
+  k=2: Pure=0.01235591, Modified=0.01863320
+  k=3: Pure=0.00886700, Modified=0.01378554
+  k=4: Pure=0.00733464, Modified=0.01236067
+  k=5: Pure=0.00614114, Modified=0.01150491
+  k=6: Pure=0.00580340, Modified=0.01098325
+  k=7: Pure=0.00360388, Modified=0.00807074
+  k=8: Pure=0.00297427, Modified=0.00783648
+
+--- Total Training Configs: 216 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87042551
+  k=2: Pure=0.87042685, Modified=0.87441777
+  k=3: Pure=0.65492406, Modified=0.67035871
+  k=4: Pure=0.48469212, Modified=0.50721281
+  k=5: Pure=0.32119587, Modified=0.33234024
+  k=6: Pure=0.14152481, Modified=0.14924303
+  k=7: Pure=0.00692055, Modified=0.01236098
+  k=8: Pure=0.00399655, Modified=0.00855412
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09838961
+  k=2: Pure=0.01235591, Modified=0.01846844
+  k=3: Pure=0.00886700, Modified=0.01340235
+  k=4: Pure=0.00733464, Modified=0.01211394
+  k=5: Pure=0.00614114, Modified=0.01136056
+  k=6: Pure=0.00580340, Modified=0.01081411
+  k=7: Pure=0.00360388, Modified=0.00788965
+  k=8: Pure=0.00297427, Modified=0.00750187
+
+================================================================================
+BATCH 19/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+--- Total Training Configs: 180 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87008026
+  k=2: Pure=0.87042685, Modified=0.87547888
+  k=3: Pure=0.65492406, Modified=0.68178049
+  k=4: Pure=0.48469212, Modified=0.49472126
+  k=5: Pure=0.32119587, Modified=0.32940477
+  k=6: Pure=0.14152481, Modified=0.15619197
+  k=7: Pure=0.00692055, Modified=0.01396766
+  k=8: Pure=0.00399655, Modified=0.00946639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10101008
+  k=2: Pure=0.01235591, Modified=0.02002818
+  k=3: Pure=0.00886700, Modified=0.01458670
+  k=4: Pure=0.00733464, Modified=0.01315880
+  k=5: Pure=0.00614114, Modified=0.01285398
+  k=6: Pure=0.00580340, Modified=0.01155506
+  k=7: Pure=0.00360388, Modified=0.00870418
+  k=8: Pure=0.00297427, Modified=0.00877648
+
+--- Total Training Configs: 192 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86973520
+  k=2: Pure=0.87042685, Modified=0.87239820
+  k=3: Pure=0.65492406, Modified=0.68139022
+  k=4: Pure=0.48469212, Modified=0.49961953
+  k=5: Pure=0.32119587, Modified=0.32998107
+  k=6: Pure=0.14152481, Modified=0.15388498
+  k=7: Pure=0.00692055, Modified=0.01348389
+  k=8: Pure=0.00399655, Modified=0.00920345
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09963618
+  k=2: Pure=0.01235591, Modified=0.01890543
+  k=3: Pure=0.00886700, Modified=0.01389933
+  k=4: Pure=0.00733464, Modified=0.01271433
+  k=5: Pure=0.00614114, Modified=0.01213423
+  k=6: Pure=0.00580340, Modified=0.01119478
+  k=7: Pure=0.00360388, Modified=0.00841772
+  k=8: Pure=0.00297427, Modified=0.00860642
+
+--- Total Training Configs: 204 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87049841
+  k=2: Pure=0.87042685, Modified=0.87437274
+  k=3: Pure=0.65492406, Modified=0.67583278
+  k=4: Pure=0.48469212, Modified=0.50416115
+  k=5: Pure=0.32119587, Modified=0.33300970
+  k=6: Pure=0.14152481, Modified=0.15206902
+  k=7: Pure=0.00692055, Modified=0.01267549
+  k=8: Pure=0.00399655, Modified=0.00879755
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09841887
+  k=2: Pure=0.01235591, Modified=0.01863320
+  k=3: Pure=0.00886700, Modified=0.01378554
+  k=4: Pure=0.00733464, Modified=0.01236067
+  k=5: Pure=0.00614114, Modified=0.01150491
+  k=6: Pure=0.00580340, Modified=0.01098325
+  k=7: Pure=0.00360388, Modified=0.00807074
+  k=8: Pure=0.00297427, Modified=0.00783648
+
+--- Total Training Configs: 216 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87042551
+  k=2: Pure=0.87042685, Modified=0.87441777
+  k=3: Pure=0.65492406, Modified=0.67035871
+  k=4: Pure=0.48469212, Modified=0.50721281
+  k=5: Pure=0.32119587, Modified=0.33234024
+  k=6: Pure=0.14152481, Modified=0.14924303
+  k=7: Pure=0.00692055, Modified=0.01236098
+  k=8: Pure=0.00399655, Modified=0.00855412
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09838961
+  k=2: Pure=0.01235591, Modified=0.01846844
+  k=3: Pure=0.00886700, Modified=0.01340235
+  k=4: Pure=0.00733464, Modified=0.01211394
+  k=5: Pure=0.00614114, Modified=0.01136056
+  k=6: Pure=0.00580340, Modified=0.01081411
+  k=7: Pure=0.00360388, Modified=0.00788965
+  k=8: Pure=0.00297427, Modified=0.00750187
+
+--- Total Training Configs: 228 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87074042
+  k=2: Pure=0.87042685, Modified=0.87476825
+  k=3: Pure=0.65492406, Modified=0.66079549
+  k=4: Pure=0.48469212, Modified=0.50745390
+  k=5: Pure=0.32119587, Modified=0.33146230
+  k=6: Pure=0.14152481, Modified=0.14947782
+  k=7: Pure=0.00692055, Modified=0.01195302
+  k=8: Pure=0.00399655, Modified=0.00834694
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835619
+  k=2: Pure=0.01235591, Modified=0.01835350
+  k=3: Pure=0.00886700, Modified=0.01326123
+  k=4: Pure=0.00733464, Modified=0.01197617
+  k=5: Pure=0.00614114, Modified=0.01130234
+  k=6: Pure=0.00580340, Modified=0.01064454
+  k=7: Pure=0.00360388, Modified=0.00774206
+  k=8: Pure=0.00297427, Modified=0.00743791
+
+================================================================================
+BATCH 20/20
+================================================================================
+
+--- Total Training Configs: 12 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87545943
+  k=2: Pure=0.87042685, Modified=0.93601360
+  k=3: Pure=0.65492406, Modified=0.76364637
+  k=4: Pure=0.48469212, Modified=0.56760449
+  k=5: Pure=0.32119587, Modified=0.38779332
+  k=6: Pure=0.14152481, Modified=0.17882922
+  k=7: Pure=0.00692055, Modified=0.03817172
+  k=8: Pure=0.00399655, Modified=0.02837716
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12839674
+  k=2: Pure=0.01235591, Modified=0.03800169
+  k=3: Pure=0.00886700, Modified=0.03442999
+  k=4: Pure=0.00733464, Modified=0.03046322
+  k=5: Pure=0.00614114, Modified=0.03116239
+  k=6: Pure=0.00580340, Modified=0.02908840
+  k=7: Pure=0.00360388, Modified=0.02208808
+  k=8: Pure=0.00297427, Modified=0.02181810
+
+--- Total Training Configs: 24 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87264748
+  k=2: Pure=0.87042685, Modified=0.92425989
+  k=3: Pure=0.65492406, Modified=0.73769940
+  k=4: Pure=0.48469212, Modified=0.54625446
+  k=5: Pure=0.32119587, Modified=0.37470141
+  k=6: Pure=0.14152481, Modified=0.17041437
+  k=7: Pure=0.00692055, Modified=0.03173289
+  k=8: Pure=0.00399655, Modified=0.02083488
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.13149756
+  k=2: Pure=0.01235591, Modified=0.03052166
+  k=3: Pure=0.00886700, Modified=0.02930549
+  k=4: Pure=0.00733464, Modified=0.02586769
+  k=5: Pure=0.00614114, Modified=0.02561462
+  k=6: Pure=0.00580340, Modified=0.02425494
+  k=7: Pure=0.00360388, Modified=0.01837957
+  k=8: Pure=0.00297427, Modified=0.01682072
+
+--- Total Training Configs: 36 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87575250
+  k=2: Pure=0.87042685, Modified=0.92123827
+  k=3: Pure=0.65492406, Modified=0.73671596
+  k=4: Pure=0.48469212, Modified=0.53993701
+  k=5: Pure=0.32119587, Modified=0.36958533
+  k=6: Pure=0.14152481, Modified=0.16660648
+  k=7: Pure=0.00692055, Modified=0.02789495
+  k=8: Pure=0.00399655, Modified=0.01896745
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.12660794
+  k=2: Pure=0.01235591, Modified=0.02853403
+  k=3: Pure=0.00886700, Modified=0.02632950
+  k=4: Pure=0.00733464, Modified=0.02335048
+  k=5: Pure=0.00614114, Modified=0.02290509
+  k=6: Pure=0.00580340, Modified=0.02101039
+  k=7: Pure=0.00360388, Modified=0.01644446
+  k=8: Pure=0.00297427, Modified=0.01507068
+
+--- Total Training Configs: 48 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87248476
+  k=2: Pure=0.87042685, Modified=0.90332169
+  k=3: Pure=0.65492406, Modified=0.73024425
+  k=4: Pure=0.48469212, Modified=0.52559129
+  k=5: Pure=0.32119587, Modified=0.36151038
+  k=6: Pure=0.14152481, Modified=0.16749274
+  k=7: Pure=0.00692055, Modified=0.02456299
+  k=8: Pure=0.00399655, Modified=0.01600595
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11833236
+  k=2: Pure=0.01235591, Modified=0.02685699
+  k=3: Pure=0.00886700, Modified=0.02344669
+  k=4: Pure=0.00733464, Modified=0.02043133
+  k=5: Pure=0.00614114, Modified=0.02035039
+  k=6: Pure=0.00580340, Modified=0.01872001
+  k=7: Pure=0.00360388, Modified=0.01405450
+  k=8: Pure=0.00297427, Modified=0.01351296
+
+--- Total Training Configs: 60 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87405080
+  k=2: Pure=0.87042685, Modified=0.89762185
+  k=3: Pure=0.65492406, Modified=0.73075109
+  k=4: Pure=0.48469212, Modified=0.52253797
+  k=5: Pure=0.32119587, Modified=0.34952727
+  k=6: Pure=0.14152481, Modified=0.16704695
+  k=7: Pure=0.00692055, Modified=0.02178827
+  k=8: Pure=0.00399655, Modified=0.01457946
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11620727
+  k=2: Pure=0.01235591, Modified=0.02545394
+  k=3: Pure=0.00886700, Modified=0.02182373
+  k=4: Pure=0.00733464, Modified=0.01811753
+  k=5: Pure=0.00614114, Modified=0.01901677
+  k=6: Pure=0.00580340, Modified=0.01672869
+  k=7: Pure=0.00360388, Modified=0.01307802
+  k=8: Pure=0.00297427, Modified=0.01192342
+
+--- Total Training Configs: 72 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87334132
+  k=2: Pure=0.87042685, Modified=0.89048204
+  k=3: Pure=0.65492406, Modified=0.72481188
+  k=4: Pure=0.48469212, Modified=0.50664734
+  k=5: Pure=0.32119587, Modified=0.33570767
+  k=6: Pure=0.14152481, Modified=0.16791136
+  k=7: Pure=0.00692055, Modified=0.01976722
+  k=8: Pure=0.00399655, Modified=0.01336029
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.11319189
+  k=2: Pure=0.01235591, Modified=0.02402474
+  k=3: Pure=0.00886700, Modified=0.02074569
+  k=4: Pure=0.00733464, Modified=0.01724540
+  k=5: Pure=0.00614114, Modified=0.01767748
+  k=6: Pure=0.00580340, Modified=0.01616569
+  k=7: Pure=0.00360388, Modified=0.01215625
+  k=8: Pure=0.00297427, Modified=0.01178843
+
+--- Total Training Configs: 84 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87341602
+  k=2: Pure=0.87042685, Modified=0.89834602
+  k=3: Pure=0.65492406, Modified=0.71336799
+  k=4: Pure=0.48469212, Modified=0.49570025
+  k=5: Pure=0.32119587, Modified=0.33025111
+  k=6: Pure=0.14152481, Modified=0.16668118
+  k=7: Pure=0.00692055, Modified=0.01838717
+  k=8: Pure=0.00399655, Modified=0.01264900
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10961615
+  k=2: Pure=0.01235591, Modified=0.02440419
+  k=3: Pure=0.00886700, Modified=0.02014658
+  k=4: Pure=0.00733464, Modified=0.01697833
+  k=5: Pure=0.00614114, Modified=0.01692378
+  k=6: Pure=0.00580340, Modified=0.01566405
+  k=7: Pure=0.00360388, Modified=0.01174476
+  k=8: Pure=0.00297427, Modified=0.01127454
+
+--- Total Training Configs: 96 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87032925
+  k=2: Pure=0.87042685, Modified=0.89119080
+  k=3: Pure=0.65492406, Modified=0.69732589
+  k=4: Pure=0.48469212, Modified=0.49720508
+  k=5: Pure=0.32119587, Modified=0.32903322
+  k=6: Pure=0.14152481, Modified=0.16790743
+  k=7: Pure=0.00692055, Modified=0.01768373
+  k=8: Pure=0.00399655, Modified=0.01219814
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10274957
+  k=2: Pure=0.01235591, Modified=0.02425021
+  k=3: Pure=0.00886700, Modified=0.01919881
+  k=4: Pure=0.00733464, Modified=0.01648585
+  k=5: Pure=0.00614114, Modified=0.01689934
+  k=6: Pure=0.00580340, Modified=0.01512524
+  k=7: Pure=0.00360388, Modified=0.01144874
+  k=8: Pure=0.00297427, Modified=0.01078075
+
+--- Total Training Configs: 108 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86768395
+  k=2: Pure=0.87042685, Modified=0.89218249
+  k=3: Pure=0.65492406, Modified=0.68870498
+  k=4: Pure=0.48469212, Modified=0.50344822
+  k=5: Pure=0.32119587, Modified=0.32958246
+  k=6: Pure=0.14152481, Modified=0.16629731
+  k=7: Pure=0.00692055, Modified=0.01751791
+  k=8: Pure=0.00399655, Modified=0.01222434
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835568
+  k=2: Pure=0.01235591, Modified=0.02355991
+  k=3: Pure=0.00886700, Modified=0.01846254
+  k=4: Pure=0.00733464, Modified=0.01617761
+  k=5: Pure=0.00614114, Modified=0.01654636
+  k=6: Pure=0.00580340, Modified=0.01494647
+  k=7: Pure=0.00360388, Modified=0.01124447
+  k=8: Pure=0.00297427, Modified=0.01076221
+
+--- Total Training Configs: 120 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86804101
+  k=2: Pure=0.87042685, Modified=0.88802206
+  k=3: Pure=0.65492406, Modified=0.68697272
+  k=4: Pure=0.48469212, Modified=0.50662468
+  k=5: Pure=0.32119587, Modified=0.33297687
+  k=6: Pure=0.14152481, Modified=0.16620352
+  k=7: Pure=0.00692055, Modified=0.01819897
+  k=8: Pure=0.00399655, Modified=0.01254440
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09868288
+  k=2: Pure=0.01235591, Modified=0.02329223
+  k=3: Pure=0.00886700, Modified=0.01832401
+  k=4: Pure=0.00733464, Modified=0.01594613
+  k=5: Pure=0.00614114, Modified=0.01645234
+  k=6: Pure=0.00580340, Modified=0.01496977
+  k=7: Pure=0.00360388, Modified=0.01102411
+  k=8: Pure=0.00297427, Modified=0.01105992
+
+--- Total Training Configs: 132 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86876759
+  k=2: Pure=0.87042685, Modified=0.88641563
+  k=3: Pure=0.65492406, Modified=0.68525883
+  k=4: Pure=0.48469212, Modified=0.50005811
+  k=5: Pure=0.32119587, Modified=0.33434429
+  k=6: Pure=0.14152481, Modified=0.16476351
+  k=7: Pure=0.00692055, Modified=0.01823064
+  k=8: Pure=0.00399655, Modified=0.01219639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09910467
+  k=2: Pure=0.01235591, Modified=0.02301742
+  k=3: Pure=0.00886700, Modified=0.01790599
+  k=4: Pure=0.00733464, Modified=0.01594584
+  k=5: Pure=0.00614114, Modified=0.01641910
+  k=6: Pure=0.00580340, Modified=0.01490782
+  k=7: Pure=0.00360388, Modified=0.01077083
+  k=8: Pure=0.00297427, Modified=0.01115004
+
+--- Total Training Configs: 144 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86911160
+  k=2: Pure=0.87042685, Modified=0.88495800
+  k=3: Pure=0.65492406, Modified=0.68229853
+  k=4: Pure=0.48469212, Modified=0.49954852
+  k=5: Pure=0.32119587, Modified=0.33347973
+  k=6: Pure=0.14152481, Modified=0.16206318
+  k=7: Pure=0.00692055, Modified=0.01750769
+  k=8: Pure=0.00399655, Modified=0.01190957
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10028342
+  k=2: Pure=0.01235591, Modified=0.02234086
+  k=3: Pure=0.00886700, Modified=0.01693722
+  k=4: Pure=0.00733464, Modified=0.01552898
+  k=5: Pure=0.00614114, Modified=0.01538769
+  k=6: Pure=0.00580340, Modified=0.01407201
+  k=7: Pure=0.00360388, Modified=0.01019121
+  k=8: Pure=0.00297427, Modified=0.01061030
+
+--- Total Training Configs: 156 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86904247
+  k=2: Pure=0.87042685, Modified=0.88247826
+  k=3: Pure=0.65492406, Modified=0.68352679
+  k=4: Pure=0.48469212, Modified=0.49205355
+  k=5: Pure=0.32119587, Modified=0.32753549
+  k=6: Pure=0.14152481, Modified=0.16075814
+  k=7: Pure=0.00692055, Modified=0.01634107
+  k=8: Pure=0.00399655, Modified=0.01125346
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10100305
+  k=2: Pure=0.01235591, Modified=0.02165199
+  k=3: Pure=0.00886700, Modified=0.01668264
+  k=4: Pure=0.00733464, Modified=0.01503388
+  k=5: Pure=0.00614114, Modified=0.01474090
+  k=6: Pure=0.00580340, Modified=0.01339639
+  k=7: Pure=0.00360388, Modified=0.00959657
+  k=8: Pure=0.00297427, Modified=0.01015217
+
+--- Total Training Configs: 168 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86950700
+  k=2: Pure=0.87042685, Modified=0.87915506
+  k=3: Pure=0.65492406, Modified=0.68294822
+  k=4: Pure=0.48469212, Modified=0.49325029
+  k=5: Pure=0.32119587, Modified=0.32698897
+  k=6: Pure=0.14152481, Modified=0.15726555
+  k=7: Pure=0.00692055, Modified=0.01500835
+  k=8: Pure=0.00399655, Modified=0.01015852
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10136550
+  k=2: Pure=0.01235591, Modified=0.02092480
+  k=3: Pure=0.00886700, Modified=0.01516005
+  k=4: Pure=0.00733464, Modified=0.01411065
+  k=5: Pure=0.00614114, Modified=0.01400597
+  k=6: Pure=0.00580340, Modified=0.01238998
+  k=7: Pure=0.00360388, Modified=0.00916670
+  k=8: Pure=0.00297427, Modified=0.00927321
+
+--- Total Training Configs: 180 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87008026
+  k=2: Pure=0.87042685, Modified=0.87547888
+  k=3: Pure=0.65492406, Modified=0.68178049
+  k=4: Pure=0.48469212, Modified=0.49472126
+  k=5: Pure=0.32119587, Modified=0.32940477
+  k=6: Pure=0.14152481, Modified=0.15619197
+  k=7: Pure=0.00692055, Modified=0.01396766
+  k=8: Pure=0.00399655, Modified=0.00946639
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.10101008
+  k=2: Pure=0.01235591, Modified=0.02002818
+  k=3: Pure=0.00886700, Modified=0.01458670
+  k=4: Pure=0.00733464, Modified=0.01315880
+  k=5: Pure=0.00614114, Modified=0.01285398
+  k=6: Pure=0.00580340, Modified=0.01155506
+  k=7: Pure=0.00360388, Modified=0.00870418
+  k=8: Pure=0.00297427, Modified=0.00877648
+
+--- Total Training Configs: 192 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86973520
+  k=2: Pure=0.87042685, Modified=0.87239820
+  k=3: Pure=0.65492406, Modified=0.68139022
+  k=4: Pure=0.48469212, Modified=0.49961953
+  k=5: Pure=0.32119587, Modified=0.32998107
+  k=6: Pure=0.14152481, Modified=0.15388498
+  k=7: Pure=0.00692055, Modified=0.01348389
+  k=8: Pure=0.00399655, Modified=0.00920345
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09963618
+  k=2: Pure=0.01235591, Modified=0.01890543
+  k=3: Pure=0.00886700, Modified=0.01389933
+  k=4: Pure=0.00733464, Modified=0.01271433
+  k=5: Pure=0.00614114, Modified=0.01213423
+  k=6: Pure=0.00580340, Modified=0.01119478
+  k=7: Pure=0.00360388, Modified=0.00841772
+  k=8: Pure=0.00297427, Modified=0.00860642
+
+--- Total Training Configs: 204 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87049841
+  k=2: Pure=0.87042685, Modified=0.87437274
+  k=3: Pure=0.65492406, Modified=0.67583278
+  k=4: Pure=0.48469212, Modified=0.50416115
+  k=5: Pure=0.32119587, Modified=0.33300970
+  k=6: Pure=0.14152481, Modified=0.15206902
+  k=7: Pure=0.00692055, Modified=0.01267549
+  k=8: Pure=0.00399655, Modified=0.00879755
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09841887
+  k=2: Pure=0.01235591, Modified=0.01863320
+  k=3: Pure=0.00886700, Modified=0.01378554
+  k=4: Pure=0.00733464, Modified=0.01236067
+  k=5: Pure=0.00614114, Modified=0.01150491
+  k=6: Pure=0.00580340, Modified=0.01098325
+  k=7: Pure=0.00360388, Modified=0.00807074
+  k=8: Pure=0.00297427, Modified=0.00783648
+
+--- Total Training Configs: 216 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87042551
+  k=2: Pure=0.87042685, Modified=0.87441777
+  k=3: Pure=0.65492406, Modified=0.67035871
+  k=4: Pure=0.48469212, Modified=0.50721281
+  k=5: Pure=0.32119587, Modified=0.33234024
+  k=6: Pure=0.14152481, Modified=0.14924303
+  k=7: Pure=0.00692055, Modified=0.01236098
+  k=8: Pure=0.00399655, Modified=0.00855412
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09838961
+  k=2: Pure=0.01235591, Modified=0.01846844
+  k=3: Pure=0.00886700, Modified=0.01340235
+  k=4: Pure=0.00733464, Modified=0.01211394
+  k=5: Pure=0.00614114, Modified=0.01136056
+  k=6: Pure=0.00580340, Modified=0.01081411
+  k=7: Pure=0.00360388, Modified=0.00788965
+  k=8: Pure=0.00297427, Modified=0.00750187
+
+--- Total Training Configs: 228 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.87074042
+  k=2: Pure=0.87042685, Modified=0.87476825
+  k=3: Pure=0.65492406, Modified=0.66079549
+  k=4: Pure=0.48469212, Modified=0.50745390
+  k=5: Pure=0.32119587, Modified=0.33146230
+  k=6: Pure=0.14152481, Modified=0.14947782
+  k=7: Pure=0.00692055, Modified=0.01195302
+  k=8: Pure=0.00399655, Modified=0.00834694
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09835619
+  k=2: Pure=0.01235591, Modified=0.01835350
+  k=3: Pure=0.00886700, Modified=0.01326123
+  k=4: Pure=0.00733464, Modified=0.01197617
+  k=5: Pure=0.00614114, Modified=0.01130234
+  k=6: Pure=0.00580340, Modified=0.01064454
+  k=7: Pure=0.00360388, Modified=0.00774206
+  k=8: Pure=0.00297427, Modified=0.00743791
+
+--- Total Training Configs: 240 ---
+
+k_after_initial:
+  k=1: Pure=0.86792514, Modified=0.86908287
+  k=2: Pure=0.87042685, Modified=0.87178038
+  k=3: Pure=0.65492406, Modified=0.65413296
+  k=4: Pure=0.48469212, Modified=0.50774816
+  k=5: Pure=0.32119587, Modified=0.33216852
+  k=6: Pure=0.14152481, Modified=0.14792899
+  k=7: Pure=0.00692055, Modified=0.01148956
+  k=8: Pure=0.00399655, Modified=0.00802841
+
+k_after_final:
+  k=1: Pure=0.01586007, Modified=0.09944341
+  k=2: Pure=0.01235591, Modified=0.01840037
+  k=3: Pure=0.00886700, Modified=0.01311077
+  k=4: Pure=0.00733464, Modified=0.01177010
+  k=5: Pure=0.00614114, Modified=0.01115056
+  k=6: Pure=0.00580340, Modified=0.01041277
+  k=7: Pure=0.00360388, Modified=0.00750422
+  k=8: Pure=0.00297427, Modified=0.00708614
