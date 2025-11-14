@@ -1,14 +1,14 @@
 """
-Compare GPT2 Pure vs GPT2 Modified: Train on last 10 predictions, test on last 10 configs.
+Compare GPT2 Pure vs GPT2 Modified (outer layer optimized via least squares with dynamic rescaling).
 
-Training data: Last 10 valid predictions per trace from configs 0-39 of haystacks 1-6
-Test data: Configs 40-49 of haystacks 1-6 (last 10 configs per haystack)
-Training: 20 batches, 2 configs per haystack per batch (12 configs total per batch)
-Modified model: Outer layer replaced by inverse method solution
+GPT2 Pure: Loaded checkpoint without modification
+GPT2 Modified: Loaded checkpoint with outer layer optimized via least squares on training data
 
-Evaluation: On held-out test configs 40-49 after each training batch
-Error at k=1,2,3,4,5,6,7,8 positions after initial/final bracket
-Aggregation: median over traces -> median over configs (10 configs × 6 haystacks = 60 total)
+Training: Process in 20 batches (2 configs per batch)
+Uses running sums of YA^T and AA^T for efficient least squares computation.
+Each activation/target pair is rescaled by 1/sqrt(x_i), where x_i is the median
+GPT2 Pure squared error at that target position (per haystack).
+All computations in float64
 """
 import sys
 import os
@@ -20,8 +20,13 @@ import torch
 import torch.nn as nn
 from core import Config
 from models import GPT2
-from tqdm import tqdm
+# import matplotlib.pyplot as plt  # Disabled plotting
 from copy import deepcopy
+from collections import defaultdict
+from tqdm import tqdm
+
+EPS = 1e-12
+RESCALE_CONFIG_INDEX = 0  # 0-based index corresponding to "config 1"
 
 def load_haystack_file(haystack_len):
     """Load a haystack file by length"""
@@ -37,20 +42,46 @@ def load_haystack_file(haystack_len):
     
     return data
 
-def load_activations(haystack_len):
-    """Load cached activations for a haystack"""
-    filepath = os.path.join(
-        os.path.dirname(__file__),
-        "Training:Test Data",
-        "Haystack",
-        "Activations",
-        f"activations_haystack_{haystack_len}.pkl"
-    )
-    
-    with open(filepath, 'rb') as f:
-        activations_dict = pickle.load(f)
-    
-    return activations_dict
+
+def compute_position_scales(
+    multi_sys_ys,
+    activations_dict,
+    pure_readout_weight,
+    pure_readout_bias,
+    description="",
+):
+    """
+    Run GPT2 Pure on RESCALE_CONFIG_INDEX for a haystack and compute
+    per-position scale factors 1 / sqrt(median_error).
+    """
+    per_position_errors = defaultdict(list)
+
+    if RESCALE_CONFIG_INDEX >= multi_sys_ys.shape[0]:
+        raise ValueError(
+            f"RESCALE_CONFIG_INDEX={RESCALE_CONFIG_INDEX} out of range for {description}"
+        )
+
+    config_idx = RESCALE_CONFIG_INDEX
+
+    for trace_idx in range(multi_sys_ys.shape[1]):
+        for example_idx in range(multi_sys_ys.shape[2]):
+            trace = multi_sys_ys[config_idx, trace_idx, example_idx]
+            activations = activations_dict[(config_idx, trace_idx, example_idx)]
+
+            for i in range(len(trace) - 1):
+                if trace[i + 1, 51] != 0:
+                    activation = activations[i].astype(np.float64)
+                    target = trace[i + 1, -5:].astype(np.float64)
+                    pred = pure_readout_weight @ activation + pure_readout_bias
+                    squared_error = np.sum((pred - target) ** 2)
+                    per_position_errors[i + 1].append(squared_error)
+
+    scale_lookup = {}
+    for position_index, errors in per_position_errors.items():
+        median_error = np.median(errors)
+        scale_lookup[position_index] = 1.0 / np.sqrt(max(median_error, EPS))
+
+    return scale_lookup
 
 def find_open_brackets(trace):
     """
@@ -70,65 +101,131 @@ def find_open_brackets(trace):
     
     return open_brackets
 
-def extract_last10_training_pairs(data, activations_dict, config_indices):
+def get_or_compute_activations(model, haystack_len, device='cpu', force_recompute=False):
     """
-    Extract the LAST 10 valid prediction pairs from each trace.
+    Get cached activations or compute and cache them.
     
-    For each trace:
-    - Find all valid positions where trace[i+1, 51] != 0 (payload flag)
-    - Take only the LAST 10 of these positions
-    - Extract pairs: (activation[i], target[i+1])
-    
-    Returns A and Y as matrices where:
-    - A has COLUMNS that are activations: A shape = [n_embd, num_samples]
-    - Y has COLUMNS that are targets: Y shape = [n_dims_out, num_samples]
+    Returns:
+        activations_dict: Dict mapping (config_idx, trace_idx, example_idx) -> activations array [seq_len, n_embd]
     """
-    multi_sys_ys = data['multi_sys_ys']
+    cache_path = os.path.join(
+        os.path.dirname(__file__),
+        "Training:Test Data",
+        "Haystack",
+        "Activations",
+        f"activations_haystack_{haystack_len}.pkl"
+    )
     
-    A_columns = []  # List of column vectors (activations)
-    Y_columns = []  # List of column vectors (targets)
+    # Try to load from cache
+    if os.path.exists(cache_path) and not force_recompute:
+        print(f"Loading cached activations from {cache_path}...")
+        with open(cache_path, 'rb') as f:
+            activations_dict = pickle.load(f)
+        print(f"Loaded cached activations (float64)\n")
+        return activations_dict
     
-    total_traces = len(config_indices) * multi_sys_ys.shape[1] * multi_sys_ys.shape[2]
+    # Compute activations
+    print(f"Computing activations for haystack length {haystack_len}...")
+    model.eval()
+    # Convert model to float64 for full precision
+    model.double()
+    model.to(device)
     
-    with tqdm(total=total_traces, desc="Extracting last 10 pairs", leave=False) as pbar:
+    data = load_haystack_file(haystack_len)
+    multi_sys_ys = data['multi_sys_ys']  # shape: (50, 1, 1000, seq_len, 57)
+    
+    activations_dict = {}
+    
+    total_traces = multi_sys_ys.shape[0] * multi_sys_ys.shape[1] * multi_sys_ys.shape[2]
+    batch_size = 100  # Process 100 traces at once for speed
+    
+    with tqdm(total=total_traces, desc=f"Haystack {haystack_len}") as pbar:
+        for config_idx in range(multi_sys_ys.shape[0]):  # 50 configs
+            for trace_idx in range(multi_sys_ys.shape[1]):  # 1 trace
+                # Process all 1000 examples in batches
+                num_examples = multi_sys_ys.shape[2]
+                for batch_start in range(0, num_examples, batch_size):
+                    batch_end = min(batch_start + batch_size, num_examples)
+                    batch_traces = multi_sys_ys[config_idx, trace_idx, batch_start:batch_end]  # [batch, seq_len, 57]
+                    
+                    # Process batch at once
+                    with torch.no_grad():
+                        input_tensor = torch.from_numpy(batch_traces).double().to(device)  # [batch, seq_len, 57] float64
+                        
+                        # Forward through read_in and backbone
+                        embeds = model._read_in(input_tensor)
+                        hidden = model._backbone(inputs_embeds=embeds).last_hidden_state  # [batch, seq_len, n_embd]
+                        
+                    batch_activations = hidden.cpu().numpy().astype(np.float64)  # Convert to float64 after computation
+                    
+                    # Store individual activations
+                    for i, example_idx in enumerate(range(batch_start, batch_end)):
+                        activations = batch_activations[i]  # [seq_len, n_embd]
+                        
+                        # Check and clean activations
+                        if not np.isfinite(activations).all():
+                            activations = np.nan_to_num(activations, nan=0.0, posinf=1e10, neginf=-1e10)
+                        
+                        activations_dict[(config_idx, trace_idx, example_idx)] = activations
+                        pbar.update(1)
+    
+    # Cache the activations
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_path, 'wb') as f:
+        pickle.dump(activations_dict, f)
+    print(f"Cached activations to {cache_path}\n")
+    
+    return activations_dict
+
+def extract_training_pairs_batch(
+    data,
+    activations_dict,
+    config_indices,
+    position_scale_lookup,
+):
+    """
+    Extract training pairs from a batch of configs and rescale them using the
+    provided per-position scale lookup (derived from GPT2-Pure errors).
+    """
+    multi_sys_ys = data["multi_sys_ys"]
+
+    A_columns = []
+    Y_columns = []
+
+    total_traces = (
+        len(config_indices) * multi_sys_ys.shape[1] * multi_sys_ys.shape[2]
+    )
+
+    with tqdm(total=total_traces, desc="Extracting pairs", leave=False) as pbar:
         for config_idx in config_indices:
             for trace_idx in range(multi_sys_ys.shape[1]):
                 for example_idx in range(multi_sys_ys.shape[2]):
-                    trace = multi_sys_ys[config_idx, trace_idx, example_idx]  # [seq_len, 57]
-                    activations = activations_dict[(config_idx, trace_idx, example_idx)]  # [seq_len, n_embd]
-                    
-                    # Find all valid positions
-                    valid_positions = []
+                    trace = multi_sys_ys[config_idx, trace_idx, example_idx]
+                    activations = activations_dict[(config_idx, trace_idx, example_idx)]
+
                     for i in range(len(trace) - 1):
-                        if trace[i+1, 51] != 0:  # Next token has payload flag
-                            valid_positions.append(i)
-                    
-                    # Take the LAST 10 valid positions
-                    last10_positions = valid_positions[-10:] if len(valid_positions) >= 10 else valid_positions
-                    
-                    # Extract pairs from these positions
-                    for i in last10_positions:
-                        activation = activations[i].astype(np.float64)  # [n_embd]
-                        target = trace[i+1, -5:].astype(np.float64)  # [5]
-                        
-                        A_columns.append(activation)
-                        Y_columns.append(target)
-                    
+                        if trace[i + 1, 51] != 0:
+                            activation = activations[i].astype(np.float64)
+                            target = trace[i + 1, -5:].astype(np.float64)
+                            position_index = i + 1
+                            scale = position_scale_lookup.get(position_index, 1.0)
+
+                            A_columns.append(activation * scale)
+                            Y_columns.append(target * scale)
+
                     pbar.update(1)
-    
-    # Convert to matrices with samples as columns
-    A = np.column_stack(A_columns)  # [n_embd, num_samples]
-    Y = np.column_stack(Y_columns)  # [n_dims_out, num_samples]
-    
-    # Check for inf/nan values
+
+    A = np.column_stack(A_columns)
+    Y = np.column_stack(Y_columns)
+
     if not np.isfinite(A).all():
-        print(f"  WARNING: A contains inf/nan values! Replacing with 0.")
+        print("  WARNING: A contains inf/nan values! Replacing with 0.")
         A = np.nan_to_num(A, nan=0.0, posinf=0.0, neginf=0.0)
-    
+
     if not np.isfinite(Y).all():
-        print(f"  WARNING: Y contains inf/nan values! Replacing with 0.")
+        print("  WARNING: Y contains inf/nan values! Replacing with 0.")
         Y = np.nan_to_num(Y, nan=0.0, posinf=0.0, neginf=0.0)
-    
+
     return A, Y
 
 def compute_least_squares_incremental(YAT_sum, AAT_sum):
@@ -189,10 +286,9 @@ def create_modified_model(model_pure, W):
     
     return model_modified
 
-def evaluate_models_on_test_configs(model_pure, model_modified, all_data, all_activations, 
-                                    haystack_lengths, k_values, device='cpu'):
+def evaluate_models_per_config(model_pure, model_modified, data, activations_dict, config_indices, k_values, device='cpu'):
     """
-    Evaluate both models on test data (configs 40-49 from all haystacks).
+    Evaluate both models on test data.
     
     For each trace:
     1. Find the FIRST open bracket in the trace
@@ -200,50 +296,50 @@ def evaluate_models_on_test_configs(model_pure, model_modified, all_data, all_ac
     3. k_after_initial: k positions after the first occurrence
     4. k_after_final: k positions after the last occurrence
     
-    Aggregation: median over traces -> median over configs (10 configs × 6 haystacks = 60 total)
+    Each trace contributes 1 squared error per k value.
+    Compute median over 1000 traces per config.
     
     Returns:
-        aggregated_pure: dict[metric] = median error across all test configs
-        aggregated_modified: dict[metric] = median error across all test configs
+        config_medians_pure: dict[metric] = list of 10 medians (one per config)
+        config_medians_modified: dict[metric] = list of 10 medians (one per config)
     """
     model_pure.eval()
     model_modified.eval()
-    model_pure.double().to(device)
-    model_modified.double().to(device)
+    model_pure.double().to(device)  # float64
+    model_modified.double().to(device)  # float64
     
-    # Test configs: 40-49 from each haystack
-    test_config_indices = list(range(40, 50))
+    multi_sys_ys = data['multi_sys_ys']
     
-    # Collect per-config medians from all 60 test configs (10 per haystack × 6 haystacks)
-    all_config_medians_pure = {f'{k}_after_initial': [] for k in k_values}
-    all_config_medians_pure.update({f'{k}_after_final': [] for k in k_values})
+    # Store squared errors per config for each metric
+    config_errors_pure = {config_idx: {f'{k}_after_initial': [] for k in k_values} for config_idx in config_indices}
+    config_errors_modified = {config_idx: {f'{k}_after_initial': [] for k in k_values} for config_idx in config_indices}
     
-    all_config_medians_modified = {f'{k}_after_initial': [] for k in k_values}
-    all_config_medians_modified.update({f'{k}_after_final': [] for k in k_values})
+    for config_idx in config_errors_pure:
+        for k in k_values:
+            config_errors_pure[config_idx][f'{k}_after_final'] = []
+            config_errors_modified[config_idx][f'{k}_after_final'] = []
     
-    for haystack_len in haystack_lengths:
-        data = all_data[haystack_len]
-        activations_dict = all_activations[haystack_len]
-        multi_sys_ys = data['multi_sys_ys']
-        
-        # Evaluate each config separately to get per-config medians
-        for config_idx in test_config_indices:
-            # Store squared errors for this config
-            config_errors_pure = {f'{k}_after_initial': [] for k in k_values}
-            config_errors_pure.update({f'{k}_after_final': [] for k in k_values})
-            
-            config_errors_modified = {f'{k}_after_initial': [] for k in k_values}
-            config_errors_modified.update({f'{k}_after_final': [] for k in k_values})
-            
+    # Track valid predictions per trace for each config
+    config_valid_counts = {config_idx: [] for config_idx in config_indices}
+    
+    total_traces = len(config_indices) * multi_sys_ys.shape[1] * multi_sys_ys.shape[2]
+    
+    with tqdm(total=total_traces, desc="Evaluating", leave=False) as pbar:
+        for config_idx in config_indices:
             for trace_idx in range(multi_sys_ys.shape[1]):
                 for example_idx in range(multi_sys_ys.shape[2]):
                     trace = multi_sys_ys[config_idx, trace_idx, example_idx]  # [seq_len, 57]
                     activations = activations_dict[(config_idx, trace_idx, example_idx)]  # [seq_len, n_embd]
                     
+                    # Track valid predictions for this trace
+                    valid_count_this_trace = 0
+                    
                     # Find all open brackets
                     open_brackets = find_open_brackets(trace)
-                    
+                
                     if len(open_brackets) == 0:
+                        config_valid_counts[config_idx].append(0)
+                        pbar.update(1)
                         continue
                     
                     # Get the FIRST open bracket in the trace
@@ -255,6 +351,8 @@ def evaluate_models_on_test_configs(model_pure, model_modified, all_data, all_ac
                                              if idx == first_bracket_idx]
                     
                     if len(same_bracket_positions) == 0:
+                        config_valid_counts[config_idx].append(0)
+                        pbar.update(1)
                         continue
                     
                     initial_pos = same_bracket_positions[0]  # First occurrence
@@ -279,8 +377,9 @@ def evaluate_models_on_test_configs(model_pure, model_modified, all_data, all_ac
                             se_pure = np.sum((pred_pure - target) ** 2)
                             se_mod = np.sum((pred_mod - target) ** 2)
                             
-                            config_errors_pure[f'{k}_after_initial'].append(se_pure)
-                            config_errors_modified[f'{k}_after_initial'].append(se_mod)
+                            config_errors_pure[config_idx][f'{k}_after_initial'].append(se_pure)
+                            config_errors_modified[config_idx][f'{k}_after_initial'].append(se_mod)
+                            valid_count_this_trace += 1
                         
                         # k after final
                         eval_pos_final = final_pos + k
@@ -299,24 +398,46 @@ def evaluate_models_on_test_configs(model_pure, model_modified, all_data, all_ac
                             se_pure = np.sum((pred_pure - target) ** 2)
                             se_mod = np.sum((pred_mod - target) ** 2)
                             
-                            config_errors_pure[f'{k}_after_final'].append(se_pure)
-                            config_errors_modified[f'{k}_after_final'].append(se_mod)
+                            config_errors_pure[config_idx][f'{k}_after_final'].append(se_pure)
+                            config_errors_modified[config_idx][f'{k}_after_final'].append(se_mod)
+                            valid_count_this_trace += 1
+                    
+                    config_valid_counts[config_idx].append(valid_count_this_trace)
+                    pbar.update(1)
+    
+    # Print valid predictions statistics per config
+    print(f"      Valid predictions per trace statistics:")
+    for config_idx in config_indices:
+        valid_counts = config_valid_counts[config_idx]
+        if len(valid_counts) > 0:
+            min_valid = np.min(valid_counts)
+            max_valid = np.max(valid_counts)
+            mean_valid = np.mean(valid_counts)
+            print(f"        Config {config_idx}: min={min_valid}, max={max_valid}, mean={mean_valid:.1f}")
+        else:
+            print(f"        Config {config_idx}: NO traces")
+    
+    # Compute median over traces for each config (return list of config medians)
+    config_medians_pure = {metric: [] for metric in [f'{k}_after_initial' for k in k_values] + [f'{k}_after_final' for k in k_values]}
+    config_medians_modified = {metric: [] for metric in [f'{k}_after_initial' for k in k_values] + [f'{k}_after_final' for k in k_values]}
+    
+    # Check for configs with no valid evaluation positions
+    for metric in config_medians_pure.keys():
+        for config_idx in config_indices:
+            num_errors = len(config_errors_pure[config_idx][metric])
+            if num_errors == 0:
+                print(f"\nWARNING: Config {config_idx} has NO valid positions for metric '{metric}'!")
+                print(f"   This will cause NaN values. Check trace structure.")
+                raise ValueError(f"Config {config_idx} has no valid evaluation positions for {metric}")
             
-            # Compute median over traces for this config
-            for metric in config_errors_pure.keys():
-                if len(config_errors_pure[metric]) > 0:
-                    all_config_medians_pure[metric].append(np.median(config_errors_pure[metric]))
-                    all_config_medians_modified[metric].append(np.median(config_errors_modified[metric]))
+            config_medians_pure[metric].append(np.median(config_errors_pure[config_idx][metric]))
+            config_medians_modified[metric].append(np.median(config_errors_modified[config_idx][metric]))
     
-    # Take median over all 60 test configs
-    aggregated_pure = {metric: np.median(values) for metric, values in all_config_medians_pure.items()}
-    aggregated_modified = {metric: np.median(values) for metric, values in all_config_medians_modified.items()}
-    
-    return aggregated_pure, aggregated_modified
+    return config_medians_pure, config_medians_modified
 
 def save_results_to_text(results_dict, k_values, output_path, batch_num=None):
     """
-    Save results to a text file.
+    Save results to a text file instead of plotting.
     
     Args:
         results_dict: Dictionary mapping num_train_configs -> {'pure': {...}, 'modified': {...}}
@@ -350,7 +471,7 @@ def save_results_to_text(results_dict, k_values, output_path, batch_num=None):
 
 def main():
     print("\n" + "="*80)
-    print("TRAIN ON LAST 10, TEST ON LAST 10 CONFIGS")
+    print("COMPARING GPT2 PURE VS MODIFIED (ALL HAYSTACKS COMBINED)")
     print("="*80 + "\n")
     
     # Configuration
@@ -394,31 +515,40 @@ def main():
     # Get dimensions
     n_embd = config.n_embd
     n_dims_out = config.n_dims_out
+
+    pure_readout_weight = model_pure._read_out.weight.detach().cpu().numpy().astype(np.float64)
+    pure_readout_bias = model_pure._read_out.bias.detach().cpu().numpy().astype(np.float64)
     
-    # Load data and activations for ALL haystacks
+    # Cache activations for ALL haystacks first
     print("="*80)
-    print("LOADING DATA AND ACTIVATIONS FOR ALL HAYSTACKS")
+    print("STEP 1: CACHING ACTIVATIONS FOR ALL HAYSTACKS")
     print("="*80 + "\n")
     
     all_activations = {}
     all_data = {}
+    all_position_scales = {}
     
     for haystack_len in haystack_lengths:
-        print(f"Loading haystack {haystack_len}...")
+        print(f"\nProcessing haystack {haystack_len}...")
+        all_activations[haystack_len] = get_or_compute_activations(model_pure, haystack_len, device)
         all_data[haystack_len] = load_haystack_file(haystack_len)
-        all_activations[haystack_len] = load_activations(haystack_len)
+        all_position_scales[haystack_len] = compute_position_scales(
+            all_data[haystack_len]["multi_sys_ys"],
+            all_activations[haystack_len],
+            pure_readout_weight,
+            pure_readout_bias,
+            description=f"haystack {haystack_len}",
+        )
     
-    print("\nAll data loaded\n")
-    
-    # Results storage
+    # Results storage: results[num_train_configs]['pure'/'modified'][metric]
     results_dict = {}
     
     # Create output directory
-    output_dir = os.path.join(os.path.dirname(__file__), "test_last10configs_results")
+    output_dir = os.path.join(os.path.dirname(__file__), "comparison_results")
     os.makedirs(output_dir, exist_ok=True)
     
     # Clear any existing text results file
-    text_path = os.path.join(output_dir, 'test_last10configs_results.txt')
+    text_path = os.path.join(output_dir, 'gpt2_comparison_results.txt')
     if os.path.exists(text_path):
         os.remove(text_path)
         print(f"Cleared existing results file\n")
@@ -428,7 +558,7 @@ def main():
     configs_per_batch = 2  # Per haystack
     
     print(f"\n{'='*80}")
-    print("TRAINING WITH LAST 10 PREDICTIONS PER TRACE")
+    print("STEP 2: TRAINING WITH COMBINED HAYSTACKS")
     print("="*80 + "\n")
     print(f"Total batches: {num_batches}")
     print(f"Configs per batch per haystack: {configs_per_batch}")
@@ -456,18 +586,20 @@ def main():
             # Get ONLY the NEW configs for this batch
             batch_config_indices = list(range(batch_start, batch_end))
             
-            print(f"Haystack {haystack_len}: Extracting LAST 10 predictions from NEW configs {batch_config_indices}...")
+            print(f"Haystack {haystack_len}: Extracting NEW configs {batch_config_indices}...")
             
-            # Extract training pairs for ONLY this batch from this haystack (last 10 per trace)
-            A_batch, Y_batch = extract_last10_training_pairs(
+            # Extract training pairs for ONLY this batch from this haystack
+            A_batch, Y_batch = extract_training_pairs_batch(
                 all_data[haystack_len], 
                 all_activations[haystack_len], 
-                batch_config_indices
+                batch_config_indices,
+                all_position_scales[haystack_len],
             )
             
-            print(f"  Extracted {A_batch.shape[1]} samples from haystack {haystack_len}")
+            print(f"  Extracted {A_batch.shape[1]} NEW samples from haystack {haystack_len}")
             
-            # Accumulate
+            # Check for NaN/inf and extreme values
+        
             YAT_sum += Y_batch @ A_batch.T  # [n_dims_out, n_embd]
             AAT_sum += A_batch @ A_batch.T  # [n_embd, n_embd]
         
@@ -491,15 +623,37 @@ def main():
         # Evaluate on test data from ALL haystacks (configs 40-49 from each)
         print(f"\n  Evaluating on test data (configs 40-49 from all haystacks)...")
         
-        aggregated_pure, aggregated_modified = evaluate_models_on_test_configs(
-            model_pure,
-            model_modified,
-            all_data,
-            all_activations,
-            haystack_lengths,
-            k_values,
-            device
-        )
+        test_config_indices = list(range(40, 50))
+        
+        # Collect per-config medians from all 60 test configs (10 per haystack × 6 haystacks)
+        all_config_medians_pure = {f'{k}_after_initial': [] for k in k_values}
+        all_config_medians_pure.update({f'{k}_after_final': [] for k in k_values})
+        
+        all_config_medians_modified = {f'{k}_after_initial': [] for k in k_values}
+        all_config_medians_modified.update({f'{k}_after_final': [] for k in k_values})
+        
+        for haystack_len in haystack_lengths:
+            print(f"    Testing on haystack {haystack_len}...")
+            
+            # Get per-config medians for this haystack (10 configs)
+            config_medians_pure, config_medians_modified = evaluate_models_per_config(
+                model_pure,
+                model_modified,
+                all_data[haystack_len],
+                all_activations[haystack_len],
+                test_config_indices,
+                k_values,
+                device
+            )
+            
+            # Collect all config medians (no intermediate haystack median)
+            for metric in config_medians_pure.keys():
+                all_config_medians_pure[metric].extend(config_medians_pure[metric])
+                all_config_medians_modified[metric].extend(config_medians_modified[metric])
+        
+        # Take median over ALL 60 test configs directly (60 values -> 1 final value per metric)
+        aggregated_pure = {metric: np.median(values) for metric, values in all_config_medians_pure.items()}
+        aggregated_modified = {metric: np.median(values) for metric, values in all_config_medians_modified.items()}
         
         # Store results
         results_dict[total_configs_so_far] = {
@@ -523,6 +677,7 @@ def main():
         
         # Save results to text file after each batch
         print(f"\n  Saving results to text file...")
+        text_path = os.path.join(output_dir, "gpt2_comparison_results.txt")
         save_results_to_text(results_dict, k_values, text_path, batch_num=batch_idx + 1)
     
     # Save final numerical results
@@ -530,11 +685,12 @@ def main():
     print("SAVING FINAL RESULTS")
     print(f"{'='*80}\n")
     
-    results_path = os.path.join(output_dir, "test_last10configs_results.pkl")
+    results_path = os.path.join(output_dir, "gpt2_comparison_results.pkl")
     with open(results_path, 'wb') as f:
         pickle.dump(results_dict, f)
     print(f"Results saved to: {results_path}")
     
+    text_path = os.path.join(output_dir, "gpt2_comparison_results.txt")
     print(f"Text results saved to: {text_path}")
     
     print(f"\n{'='*80}")
@@ -543,13 +699,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
-
